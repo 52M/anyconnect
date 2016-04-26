@@ -305,7 +305,7 @@ function get_info_from_net(){
     if [ $? -ne 0 -o -z $ocserv_hostname ]; then
         ocserv_hostname=`dig +short +tcp myip.opendns.com @resolver1.opendns.com`
     fi
-	onion_version='0.10.12'
+	onion_version='0.11.2'
     OC_version_latest=$onion_version
 }
 
