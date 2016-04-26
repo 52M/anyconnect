@@ -502,9 +502,11 @@ function tar_ocserv_install(){
     [ "$OC_version_latest" = "" ] && {
 #可以换成自己的下载地址
         oc_version='0.10.8'
-        curl -SOL "https://raw.githubusercontent.com/squidproxy/squidproxy/master/Anyconnect/ocserv-$oc_version.tar.xz"
+        curl -SOL "https://raw.githubusercontent.com/squidproxy/anyconnect/master/ocserv-$oc_version.tar.xz"
+		         
+				   
     } || {
-        wget --no-check-certificate -c https://raw.githubusercontent.com/squidproxy/squidproxy/master/Anyconnect/ocserv-$oc_version.tar.xz
+        wget --no-check-certificate -c https://raw.githubusercontent.com/squidproxy/anyconnect/master/ocserv-$oc_version.tar.xz
 
     }
     tar xvf ocserv-$oc_version.tar.xz
